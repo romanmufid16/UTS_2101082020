@@ -48,7 +48,7 @@ public class GajiController {
     }
     
     @DeleteMapping("/{id}")
-    public void deleteGajiById(Long id){
+    public void deleteGajiById(@PathVariable("id") Long id){
         gajiService.deleteGajiById(id);
     }
 }
